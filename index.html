@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rick and Morty - Personajes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Personajes de Rick and Morty</h1>
+    <input type="search" id="search" placeholder="Buscar personaje..." aria-label="Buscar personaje" />
+  </header>
+
+  <main id="personajes-container" aria-live="polite" aria-busy="true">
+    <!-- Aquí se cargan los personajes -->
+  </main>
+
+  <div id="error-message" role="alert" style="display:none;"></div>
+  <div id="loader" class="loader" aria-hidden="false"></div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
